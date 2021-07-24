@@ -51,19 +51,20 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Некорректный email", Toast.LENGTH_SHORT)
                         .show()
             }
-            if(!checkPassword(password.text.toString())){
-                Toast.makeText(this, "Некорректный пароль", Toast.LENGTH_SHORT)
-                        .show()
-            }
             else {
-                val currentUser =
-                        hasUser(email.text.toString(), password.text.toString())
-                if (currentUser != null) {
-                    rememberUser(currentUser)
-                    goToProfile(currentUser)
+                if (!checkPassword(password.text.toString())) {
+                    Toast.makeText(this, "Некорректный пароль", Toast.LENGTH_SHORT)
+                        .show()
                 } else {
-                    Toast.makeText(this, "Пользователя не существует", Toast.LENGTH_SHORT)
+                    val currentUser =
+                        hasUser(email.text.toString(), password.text.toString())
+                    if (currentUser != null) {
+                        rememberUser(currentUser)
+                        goToProfile(currentUser)
+                    } else {
+                        Toast.makeText(this, "Пользователя не существует", Toast.LENGTH_SHORT)
                             .show()
+                    }
                 }
             }
         }

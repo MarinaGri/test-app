@@ -36,6 +36,7 @@
         android:layout_below="@id/user_full_name"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="17sp"
+        android:textColor="@color/email_color"
         android:fontFamily="@font/paprika"
         android:text="@string/email_e"
         android:textSize="17sp" />
@@ -47,6 +48,7 @@
         android:layout_marginTop="50dp"
         android:backgroundTint="@color/btn_color"
         android:text="@string/btn_exit"
+        android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/tv_email"/>
 
