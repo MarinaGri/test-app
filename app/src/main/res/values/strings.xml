@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">simple-app</string>
+    <string name="input_pass">Введите пароль:</string>
+    <string name="enter_btn">Войти</string>
+    <string name="email_hint">Введите email:</string>
+    <string name="name_surname">Имя Фамилия</string>
+    <string name="email_e">smth@mail.ru</string>
+    <string name="btn_exit">Выйти</string>
+</resources>

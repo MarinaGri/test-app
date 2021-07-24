@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    android:background="@drawable/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/avatar_1"
+        app:civ_border_width="2dp"
+        android:layout_marginTop="30sp"
+        android:layout_centerHorizontal="true"
+        app:civ_border_color="@color/white"/>
+
+    <TextView
+        android:id="@+id/user_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:fontFamily="monospace"
+        android:text="@string/name_surname"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_full_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17sp"
+        android:fontFamily="@font/paprika"
+        android:text="@string/email_e"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/btn_color"
+        android:text="@string/btn_exit"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_email"/>
+
+</RelativeLayout>
